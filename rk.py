@@ -20,8 +20,8 @@ listing = {
 
 dt = datetime.datetime.now()
 dt_b4 = (datetime.date.today() - datetime.timedelta(1*365/12))
-dt = dt.strftime("%w-%b-%Y")
-dt_b4 = dt_b4.strftime("%w-%b-%Y")
+dt = dt.strftime("%d-%b-%Y")
+dt_b4 = dt_b4.strftime("%d-%b-%Y")
 
 params = (
     "startDate="+dt_b4+"&endDate="+dt+"&timeframeOption=LAST_30_DAYS&chartTimeBuckets=WEEK&reportConfigJson=%7B%22totalBoxes%22%3A%7B%22TOTAL_DISTANCE%22%3A%7B%22field%22%3A%22TOTAL_DISTANCE%22%7D%7D%2C%22charts%22%3A%7B%22chart1%22%3A%7B%22field%22%3A%22TOTAL_DISTANCE%22%2C%22stack%22%3A%22true%22%7D%7D%7D"
